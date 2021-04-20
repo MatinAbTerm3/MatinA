@@ -84,4 +84,7 @@ aside,footer
 {
 	border : 2px solid goldenrod;
 }
-
+.list-group-item
+{
+	background-color : black;
+}
