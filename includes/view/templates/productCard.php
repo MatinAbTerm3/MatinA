@@ -5,7 +5,7 @@ echo "
 			<img src = '{$row['image']}' class = 'card-img-top'>
 			<section class = 'card-body'>
 				<h4 class = 'card-title'>
-					<a href = '#' class = 'card-link'>
+					<a href = 'productDetails.php?id={$row['id']}' class = 'card-link'>
 						نام کتاب:{$row['bookname']}
 					</a>
 				</h4>
