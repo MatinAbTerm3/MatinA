@@ -1,6 +1,7 @@
 <?php
-
+include 'alert.php';
 include 'DB.php';
+include 'security/Authentication.php';
 
 if(! function_exists('get_header'))
 {
@@ -71,5 +72,15 @@ if(! function_exists('redirect'))
         exit();
     }
 }
+
+/*function mySessionStarter()
+{
+	if(session_status() !== PHP_SESSION_ACTIVE)
+	{
+		session_set_cookie_params($lifetime = 30 * 24 * 60 * 60 , $path = '/' , $domain = $_SERVER['HTTP_HOST'] 
+		, $secure = false , $httponly = true );
+		session_start();
+	}
+}*/
 
 ?>
