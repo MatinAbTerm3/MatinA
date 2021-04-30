@@ -9,25 +9,18 @@
                                     ورود/ثبت نام
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="register.html">ثبت نام</a></li>
-                                    <li><a class="dropdown-item" href="#">ورود</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo SITE_URL; ?>register.html">ثبت نام</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo SITE_URL; ?>login.php">ورود</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">خانه</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    کتاب ها
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">کتاب های نو</a></li>
-                                    <li><a class="dropdown-item" href="#">کتاب های دست دوم</a></li>
-                                    <li><a class="dropdown-item" href="#">کتاب های صوتی</a></li>
-                                </ul>
+                                <a class="nav-link active" aria-current="page" href="<?php echo SITE_URL; ?>index.html">خانه</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contactus.html" >تماس با ما</a>
+                                <a class="nav-link" href="<?php echo SITE_URL; ?>catalog.php" >کتاب ها</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo SITE_URL; ?>contactus.html" >تماس با ما</a>
                             </li>
                         </ul>
                         <form class="d-flex">
