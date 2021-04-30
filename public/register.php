@@ -1,5 +1,5 @@
 <?php
-
+include '__php__.php';
 if(isset($_POST['submit']))
 {
     if($_POST['password'] === $_POST['repeatpass'])

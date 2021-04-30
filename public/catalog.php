@@ -1,7 +1,7 @@
 <?php
 //Controller
-include '../includes/settings.php';
-include '../includes/functions.php';
+include '__php__.php';
+
 
 $db = new DB();
 
@@ -9,8 +9,8 @@ $table = Product::find();
 
 unset($db);
 
-$alert = '';
+$alerts = Alert::alerts();
 
-include '../includes/view/catalog.php';
+include 'view/catalog.php';
 
 ?>
