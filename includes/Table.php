@@ -33,7 +33,7 @@ if(! class_exists('Table'))
 			$result = $GLOBALS['db'] -> execute($sql);
 			if($result)
 			{
-				echo alertTemplate('اطلاعات درج شده با موفقیت ارسال شد!' , 'success');
+				Alert::alerts('اطلاعات درج شده با موفقیت ارسال شد!' , 'success');
 			}
 		}
 		static public function update($params)
@@ -49,7 +49,7 @@ if(! class_exists('Table'))
 			$result = $GLOBALS['db'] -> execute($sql);
 			if($result)
 			{
-				echo alertTemplate('با موفقیت ویرایش شد','success');
+				Alert::alerts('با موفقیت ویرایش شد','success');
 			}
 		}
 		static public function delete($id)
@@ -61,7 +61,7 @@ if(! class_exists('Table'))
 			$result = $GLOBALS['db'] -> execute($sql);
 			if($result)
 			{
-				echo alertTemplate('حذف شد','success');
+				Alert::alerts('حذف شد','success');
 			}
 		}
 		static public function find($where = 'TRUE' , $order = 'id DESC' , $count = 12 , $offset = 0)
